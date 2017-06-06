@@ -1,5 +1,4 @@
-![logo](https://raw.githubusercontent.com/unifiedstreaming/origin/master/unifiedstreaming-logo-black.jpg)
-
+![logo](https://raw.githubusercontent.com/unifiedstreaming/origin/master/unifiedstreaming-logo-black.png)
 
 Live Origin
 -----------
