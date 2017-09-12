@@ -1,4 +1,4 @@
-FROM unifiedstreaming/origin:1.7.31
+FROM unifiedstreaming/origin:1.7.32
 LABEL maintainer "Unified Streaming <support@unified-streaming.com>"
 
 # overwrite config and entrypoint
