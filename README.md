@@ -37,7 +37,7 @@ docker run \
   -e USP_LICENSE_KEY=<license_key> \
   -e CHANNEL=test01 \
   -p 1080:80 \
-  unifiedstreaming/live:1.7.28
+  unifiedstreaming/live:1.7.32
 ```
 
 The publishing point will be created at <http://localhost:1080/test01/test01.isml>.
