@@ -37,7 +37,7 @@ docker run \
   -e USP_LICENSE_KEY=<license_key> \
   -e CHANNEL=test01 \
   -p 1080:80 \
-  unifiedstreaming/live:1.8.4
+  unifiedstreaming/live:1.8.5
 ```
 
 The publishing point will be created at <http://localhost:1080/test01/test01.isml>.
@@ -49,7 +49,7 @@ curl http://localhost:1080/test01/test01.isml/state
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created with Unified Streaming Platform(version=1.8.4) -->
+<!-- Created with Unified Streaming Platform(version=1.8.5) -->
 <smil
   xmlns="http://www.w3.org/2001/SMIL20/Language">
   <head>
