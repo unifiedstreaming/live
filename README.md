@@ -36,6 +36,7 @@ A simple example, running locally on port 1080 with a channel named test01:
 docker run \
   -e USP_LICENSE_KEY=<license_key> \
   -e CHANNEL=test01 \
+  -e PUB_POINT_OPTS="--restart_on_encoder_reconnect --archive_segment_length=60" \
   -p 1080:80 \
   unifiedstreaming/live:1.10.12
 ```
