@@ -19,7 +19,7 @@ Available variables are:
 
 |Variable        |Usage   |Mandatory?|
 |----------------|--------|----------|
-|USP_LICENSE_KEY |Your license key. To evaluate the software you can create an account at <https://private.unified-streaming.com/register/>|Yes|
+|USP_LICENSE_KEY |Your license key. To evaluate the software you can create an account at <https://www.unified-streaming.com/get-started>|Yes|
 |CHANNEL|Channel name, the publishing point URL will be http://<container\>/CHANNEL/CHANNEL.isml|Yes|
 |PUB_POINT_OPTS  |Options to use when creating the publishing point. See http://docs.unified-streaming.com/faqs/general/options.html|No|
 |LOG_LEVEL|Sets the Apache error log level|No|
