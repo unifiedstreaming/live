@@ -2,7 +2,7 @@
 
 Live Origin
 -----------
-This image can be used as a Live streaming Origin for a single channel.
+This image can be used as a Live streaming Origin for a single channel. 
 
 
 What is Unified Origin?
