@@ -38,7 +38,7 @@ docker run \
   -e CHANNEL=test01 \
   -e PUB_POINT_OPTS="--restart_on_encoder_reconnect --archive_segment_length=60" \
   -p 1080:80 \
-  unifiedstreaming/live:1.10.18
+  unifiedstreaming/live:1.10.28
 ```
 
 The publishing point will be created at <http://localhost:1080/test01/test01.isml>.
