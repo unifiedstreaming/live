@@ -19,7 +19,7 @@ Available variables are:
 
 |Variable        |Usage   |Mandatory?|
 |----------------|--------|----------|
-|USP_LICENSE_KEY |Your license key. To evaluate the software you can create an account at <https://www.unified-streaming.com/get-started>|Yes|
+|UspLicenseKey |Your license key. To evaluate the software you can create an account at <https://www.unified-streaming.com/get-started>|Yes|
 |CHANNEL|Channel name, the publishing point URL will be http://<container\>/CHANNEL/CHANNEL.isml|Yes|
 |PUB_POINT_OPTS  |Options to use when creating the publishing point. See http://docs.unified-streaming.com/faqs/general/options.html|No|
 |LOG_LEVEL|Sets the Apache error log level|No|
@@ -34,11 +34,11 @@ A simple example, running locally on port 1080 with a channel named test01:
 
 ```bash
 docker run \
-  -e USP_LICENSE_KEY=<license_key> \
+  -e UspLicenseKey=<license_key> \
   -e CHANNEL=test01 \
-  -e PUB_POINT_OPTS="--restart_on_encoder_reconnect --archive_segment_length=60" \
+  -e PUB_POINT_OPTS="--archiving=1 --archive_length=600 --archive_segment_length=60 --dvr_window_length=30 --restart_on_encoder_reconnect" \
   -p 1080:80 \
-  unifiedstreaming/live:1.10.28
+  unifiedstreaming/live:1.11.1
 ```
 
 The publishing point will be created at <http://localhost:1080/test01/test01.isml>.
@@ -50,13 +50,13 @@ curl http://localhost:1080/test01/test01.isml/state
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created with Unified Streaming Platform(version=1.10.18) -->
+<!-- Created with Unified Streaming Platform(version=1.11.1) -->
 <smil
   xmlns="http://www.w3.org/2001/SMIL20/Language">
   <head>
     <meta
       name="updated"
-      content="2017-06-02T11:32:42.026883Z">
+      content="2021-06-14T11:00:42.026883Z">
     </meta>
     <meta
       name="state"

@@ -12,9 +12,9 @@ if [ -z "$LOG_FORMAT" ]
 fi
 
 # validate required variables are set
-if [ -z "$USP_LICENSE_KEY" ]
+if [ -z "$UspLicenseKey" ]
   then
-  echo >&2 "Error: USP_LICENSE_KEY environment variable is required but not set."
+  echo >&2 "Error: UspLicenseKey environment variable is required but not set."
   exit 1
 fi
 
@@ -29,14 +29,14 @@ fi
 /bin/sed "s/{{LOG_LEVEL}}/${LOG_LEVEL}/g; s/{{LOG_FORMAT}}/'${LOG_FORMAT}'/g" /etc/apache2/conf.d/unified-origin.conf.in > /etc/apache2/conf.d/unified-origin.conf
 
 # USP license
-echo $USP_LICENSE_KEY > /etc/usp-license.key
+echo $UspLicenseKey > /etc/usp-license.key
 
 # create publishing point
 if [ ! -f /var/www/live/$CHANNEL/$CHANNEL.isml ]
   then
     mkdir -p /var/www/live/$CHANNEL
     chown -R apache:apache /var/www/live
-    mp4split --license-key=$USP_LICENSE_KEY \
+    mp4split \
       -o /var/www/live/$CHANNEL/$CHANNEL.isml \
       $PUB_POINT_OPTS
 fi
