@@ -38,7 +38,7 @@ docker run \
   -e CHANNEL=test01 \
   -e PUB_POINT_OPTS="--archiving=1 --archive_length=600 --archive_segment_length=60 --dvr_window_length=30 --restart_on_encoder_reconnect" \
   -p 1080:80 \
-  unifiedstreaming/live:1.11.1
+  unifiedstreaming/live
 ```
 
 The publishing point will be created at <http://localhost:1080/test01/test01.isml>.
@@ -50,13 +50,13 @@ curl http://localhost:1080/test01/test01.isml/state
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created with Unified Streaming Platform(version=1.11.1) -->
+<!-- Created with Unified Streaming Platform  (version=1.11.1-24062) -->
 <smil
   xmlns="http://www.w3.org/2001/SMIL20/Language">
   <head>
     <meta
       name="updated"
-      content="2021-06-14T11:00:42.026883Z">
+      content="2021-06-15T08:32:44.910401Z">
     </meta>
     <meta
       name="state"
