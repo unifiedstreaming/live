@@ -50,13 +50,13 @@ curl http://localhost:1080/test01/test01.isml/state
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created with Unified Streaming Platform  (version=1.11.1-24062) -->
+<!-- Created with Unified Streaming Platform (version=1.12.13-29605) -->
 <smil
   xmlns="http://www.w3.org/2001/SMIL20/Language">
   <head>
     <meta
       name="updated"
-      content="2021-06-15T08:32:44.910401Z">
+      content="2023-12-11T09:59:42.431880Z">
     </meta>
     <meta
       name="state"
@@ -64,4 +64,5 @@ curl http://localhost:1080/test01/test01.isml/state
     </meta>
   </head>
 </smil>
+
 ```
